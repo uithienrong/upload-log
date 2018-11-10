@@ -1,0 +1,22 @@
+<h2>Task: <%= @task.name %></h2>
+
+<div class="autoscroll">
+<table class="list">
+  <thead>
+    <tr>
+      <% @header.each do |field| %>
+        <th><%= field %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+  <% @rows.each do |row| %>
+    <tr>
+      <% row.each do |field| %>
+        <td><%= field %></td>
+      <% end %>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+</div>
